@@ -17,11 +17,11 @@ Transform: We learned how to clean and structure the data by focusing on just th
 Load: Finally, we connected Python to Gmail’s SMTP server to send emails with weather updates. Though SMTP is a complex protocol, I explained it as a way to “send a message” from one computer to another.
 ✨ Building Together: We even added a basic UI using Tkinter where he could input multiple cities and email addresses. The look on his face when he saw real-time weather data sent to his inbox was priceless! This project was more than just code; it was about showing him how abstract concepts can come to life when applied practically.
 
-💼 ** Key Takeaways **: This experience wasn’t about teaching every single technical detail but rather about sparking curiosity. By focusing on what we wanted to achieve and why each step mattered, we built something real and functional while keeping things fun and engaging.
+💼 **Key Takeaways**: This experience wasn’t about teaching every single technical detail but rather about sparking curiosity. By focusing on what we wanted to achieve and why each step mattered, we built something real and functional while keeping things fun and engaging.
 
-👨‍💻 Tech Stack:
+👨‍💻 **Tech Stack**:
 
-Python (requests, tkinter, pyodbc)
-OpenWeatherMap API
-SMTP (for email notifications)
-SQL Server for logging emails
+- Python (requests, tkinter, pyodbc)
+- OpenWeatherMap API
+- SMTP (for email notifications)
+- SQL Server for logging emails

@@ -32,26 +32,26 @@ His excitement grew the moment he realized he could access live weather data! I 
 ## Architecture Flow:
 1. User Interface (UI):
 
-The user interacts with a basic UI created with Tkinter.
-They input multiple email addresses and city names into the input fields.
-Upon clicking the "Send Weather Updates" button, the system initiates the flow.
+- The user interacts with a basic UI created with Tkinter.
+- They input multiple email addresses and city names into the input fields.
+- Upon clicking the "Send Weather Updates" button, the system initiates the flow.
 
 2. Weather Data Fetching (OpenWeatherMap API):
 
-The entered cities are passed to the weather.py script.
-The script uses the OpenWeatherMap API to fetch weather details (temperature, description) for each city.
-The API response is parsed and returned to the main application.
+- The entered cities are passed to the weather.py script.
+- The script uses the OpenWeatherMap API to fetch weather details (temperature, description) for each city.
+- The API response is parsed and returned to the main application.
 
 3.Email Sending (SMTP):
 
-The parsed weather data is sent to the notifier.py script.
-The notifier.py script sends weather update emails using Gmail's SMTP server to the email addresses entered by the user.
-Multiple emails are sent, one for each recipient, containing weather details of each city.
+- The parsed weather data is sent to the notifier.py script.
+- The notifier.py script sends weather update emails using Gmail's SMTP server to the email addresses entered by the user.
+- Multiple emails are sent, one for each recipient, containing weather details of each city.
 
 4. Data Logging (SQL Server):
 
-Once an email is sent, the event is logged into a SQL Server database using the log_email function.
-The logged data includes the date/time, sender and recipient email addresses, city, temperature, and weather description.
+- Once an email is sent, the event is logged into a SQL Server database using the log_email function.
+- The logged data includes the date/time, sender and recipient email addresses, city, temperature, and weather description.
 
 ![1](https://github.com/user-attachments/assets/1b48c0c1-8fb0-4a84-a0d5-e0fab51121a9)
 
